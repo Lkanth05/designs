@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Portfolio - Marketing & Branding Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="header__brand">
+                    <h1>Design Portfolio</h1>
+                    <p>Marketing & Branding Solutions</p>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link">Home</a></li>
+                        <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li><a href="#skills" class="nav__link">Skills</a></li>
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                    <button class="nav__toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2>Creating Impactful Visual Solutions</h2>
+                <p>Connecting brands with their target audiences through strategic design and compelling storytelling across digital marketing, cultural events, service advertising, and food marketing.</p>
+                <a href="#portfolio" class="btn btn--primary">View Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="portfolio__header">
+                <h2>Featured Projects</h2>
+                <p>Explore diverse design solutions across multiple industries</p>
+            </div>
+
+            <!-- Category Filter -->
+            <div class="portfolio__filters">
+                <button class="filter-btn active" data-category="All">All Projects</button>
+                <button class="filter-btn" data-category="Digital Marketing">Digital Marketing</button>
+                <button class="filter-btn" data-category="Event Design">Event Design</button>
+                <button class="filter-btn" data-category="Service Marketing">Service Marketing</button>
+                <button class="filter-btn" data-category="Food & Beverage">Food & Beverage</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio__grid" id="portfolioGrid">
+                <!-- Projects will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="skills__content">
+                <h2>Skills & Expertise</h2>
+                <div class="skills__grid">
+                    <div class="skill-card">
+                        <h3>Specialties</h3>
+                        <ul>
+                            <li>Brand Identity</li>
+                            <li>Marketing Materials</li>
+                            <li>Digital Design</li>
+                            <li>Print Design</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools & Software</h3>
+                        <ul>
+                            <li>Adobe Creative Suite</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Adobe InDesign</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Experience Areas</h3>
+                        <ul>
+                            <li>Corporate Branding</li>
+                            <li>Cultural Design</li>
+                            <li>Service Advertising</li>
+                            <li>Food Marketing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact__content">
+                <h2>Let's Work Together</h2>
+                <p>Ready to bring your brand vision to life? Get in touch for professional design solutions tailored to your business needs.</p>
+                <div class="contact__info">
+                    <div class="contact__item">
+                        <h4>New Projects</h4>
+                        <p>Available for freelance projects and brand consultations</p>
+                    </div>
+                    <div class="contact__item">
+                        <h4>Quick Response</h4>
+                        <p>Professional communication within 24 hours</p>
+                    </div>
+                </div>
+                <a href="mailto:hello@designportfolio.com" class="btn btn--primary">Start a Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal hidden" id="projectModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" id="modalClose">&times;</button>
+            <div class="modal__body" id="modalBody">
+                <!-- Modal content will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
