@@ -12,7 +12,9 @@ const portfolioData = {
       "dimensions": "1131 x 1600px",
       "target_audience": "Business owners, entrepreneurs, companies seeking digital marketing services",
       "key_features": ["Gradient backgrounds", "Abstract flowing elements", "Professional typography", "Contact information integration"],
-      "style_keywords": ["Modern", "Tech-focused", "Professional", "Abstract", "Gradient"]
+      "style_keywords": ["Modern", "Tech-focused", "Professional", "Abstract", "Gradient"],
+      "imageSource": "./images/1131w-cuIyhKEShR8.webp",
+      "imageAlt": "Digital Marketing Agency Brand Identity Design"
     },
     {
       "id": 2,
